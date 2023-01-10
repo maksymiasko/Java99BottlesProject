@@ -36,8 +36,6 @@ public class ATest extends BaseTest {
 
     @Test
     public void testAdaLanguageLink_NavigatesTo_AdaLanguagePage() {
-        final String expectedURL = "https://www.99-bottles-of-beer.net/language-ada-19.html";
-        final String expectedTitle = "99 Bottles of Beer | Language Ada";
 
         APage aPage = new APage(getDriver());
         AdaLanguagePage adaLanguagePage = new AdaLanguagePage(getDriver());
