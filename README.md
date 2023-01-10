@@ -1,7 +1,7 @@
 <h1>Java 11 | Selenium | TestNG | Maven | POM Project</h1>
 <p>This is a sample Java 11 AdoptOpenJDK | Selenium WebDriver | Maven | TestNG project created in IntelliJ IDE, using Page Object Model and Generic Type.</p>
 <p>Website <a href="https://www.99-bottles-of-beer.net/">https://www.99-bottles-of-beer.net/</a>&nbsp;was used to create functional, API, and UI tests.</p>
-<p><a href="https://github.com/ci.yml">ci.yml</a> file was used for the GitHub workflow<br /><br /><a href="https://github.com/dorny/test-reporter">dorny/test-reporter@v1</a> was used to generate reports after each CI run<br /><br /></p>
+<p><a href="https://github.com/maksymiasko/Java99BottlesProject/blob/main/.github/workflows/ci.yml">ci.yml</a> file was used for the GitHub workflow<br /><br /><a href="https://github.com/dorny/test-reporter">dorny/test-reporter@v1</a> was used to generate reports after each CI run<br /><br /></p>
 <p><strong>pom.xml dependencies used:</strong></p>
 <blockquote>
 <pre>&lt;dependencies&gt;<br /><br />    &lt;dependency&gt;<br />        &lt;groupId&gt;org.testng&lt;/groupId&gt;<br />        &lt;artifactId&gt;testng&lt;/artifactId&gt;<br />        &lt;version&gt;7.6.1&lt;/version&gt;<br />    &lt;/dependency&gt;<br /><br />    &lt;dependency&gt;<br />        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;<br />        &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;<br />        &lt;version&gt;4.5.3&lt;/version&gt;<br />    &lt;/dependency&gt;<br /><br />    &lt;dependency&gt;<br />        &lt;groupId&gt;io.github.bonigarcia&lt;/groupId&gt;<br />        &lt;artifactId&gt;webdrivermanager&lt;/artifactId&gt;<br />        &lt;version&gt;5.3.0&lt;/version&gt;<br />    &lt;/dependency&gt;<br /><br />&lt;/dependencies&gt;</pre>
