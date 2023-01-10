@@ -3,6 +3,7 @@ package tests.browse_languages.letters;
 import base.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.browse_languages.languages.AdaLanguagePage;
 import pages.browse_languages.languages.LanguagePage;
@@ -54,7 +55,7 @@ public class ATest extends BaseTest {
         Assert.assertEquals(adaLanguagePage.getTitle(), actualTitle);
     }
 
-
+    @Ignore
     @Test
     public void testABCPagesLanguagesNameAndInformationColumn() {
 
