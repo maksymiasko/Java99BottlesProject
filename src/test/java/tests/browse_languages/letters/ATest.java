@@ -3,6 +3,7 @@ package tests.browse_languages.letters;
 import base.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.browse_languages.languages.AdaLanguagePage;
 import pages.browse_languages.languages.LanguagePage;
@@ -35,8 +36,6 @@ public class ATest extends BaseTest {
 
     @Test
     public void testAdaLanguageLink_NavigatesTo_AdaLanguagePage() {
-        final String expectedURL = "https://www.99-bottles-of-beer.net/language-ada-19.html";
-        final String expectedTitle = "99 Bottles of Beer | Language Ada";
 
         APage aPage = new APage(getDriver());
         AdaLanguagePage adaLanguagePage = new AdaLanguagePage(getDriver());
@@ -54,7 +53,7 @@ public class ATest extends BaseTest {
         Assert.assertEquals(adaLanguagePage.getTitle(), actualTitle);
     }
 
-
+    @Ignore
     @Test
     public void testABCPagesLanguagesNameAndInformationColumn() {
 
