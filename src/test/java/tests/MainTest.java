@@ -32,24 +32,23 @@ public class MainTest extends BaseTest {
 
     @Test
     public void testTopMenuURLs_AreTheSameAs_FooterMenuURLs() {
-        List<String> mainMenuURLList = new ArrayList<>();
-        List<String> mainMenuFooterURLList = new ArrayList<>();
-
         StartPage startPage = new StartPage(getDriver());
 
-        mainMenuURLList.add(openBaseURL().getURL());
-        mainMenuURLList.add(startPage.clickBrowseLanguagesMenu().getURL());
-        mainMenuURLList.add(startPage.clickSearchLanguagesMenu().getURL());
-        mainMenuURLList.add(startPage.clickTopListsMenu().getURL());
-        mainMenuURLList.add(startPage.clickGuestbookMenu().getURL());
-        mainMenuURLList.add(startPage.clickSubmitNewLanguageMenu().getURL());
+        List<String> mainMenuURLList = List.of(
+                openBaseURL().getURL(),
+                startPage.clickBrowseLanguagesMenu().getURL(),
+                startPage.clickSearchLanguagesMenu().getURL(),
+                startPage.clickTopListsMenu().getURL(),
+                startPage.clickGuestbookMenu().getURL(),
+                startPage.clickSubmitNewLanguageMenu().getURL());
 
-        mainMenuFooterURLList.add(openBaseURL().getURL());
-        mainMenuFooterURLList.add(startPage.clickBrowseLanguagesFooterMenu().getURL());
-        mainMenuFooterURLList.add(startPage.clickSearchLanguagesFooterMenu().getURL());
-        mainMenuFooterURLList.add(startPage.clickTopListFooterMenu().getURL());
-        mainMenuFooterURLList.add(startPage.clickGuestBookFooterMenu().getURL());
-        mainMenuFooterURLList.add(startPage.clickSubmitNewLanguageFooterMenu().getURL());
+        List<String> mainMenuFooterURLList = List.of(
+                openBaseURL().getURL(),
+                startPage.clickBrowseLanguagesFooterMenu().getURL(),
+                startPage.clickSearchLanguagesFooterMenu().getURL(),
+                startPage.clickTopListFooterMenu().getURL(),
+                startPage.clickGuestBookFooterMenu().getURL(),
+                startPage.clickSubmitNewLanguageFooterMenu().getURL());
 
         Assert.assertEquals(mainMenuURLList, mainMenuFooterURLList);
     }
